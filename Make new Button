@@ -1,0 +1,7 @@
+final Button createAccount = (Button) findViewById(R.id.button);
+        createAccount.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent i = new Intent(LoginPg.this, SignUp.class);
+                LoginPg.this.startActivity(i);
+            }
+        });
